@@ -1,0 +1,28 @@
+{
+  "name": "get-extension",
+  "version": "0.0.1",
+  "description": "Library to parse a string for a (known) file extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Please consult README.md for tests.\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StefanHamminga/node-get-extension.git"
+  },
+  "tonicExampleFilename": "examples/demo.js",
+  "keywords": [
+    "parse",
+    "file",
+    "extension",
+    "mime"
+  ],
+  "author": "Stefan Hamminga",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/StefanHamminga/node-get-extension/issues"
+  },
+  "homepage": "https://github.com/StefanHamminga/node-get-extension",
+  "dependencies": {
+  }
+}
