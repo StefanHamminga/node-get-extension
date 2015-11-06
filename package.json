@@ -1,6 +1,6 @@
 {
   "name": "get-extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Library to parse a string for a (known) file extension",
   "main": "index.js",
   "scripts": {

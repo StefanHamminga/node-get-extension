@@ -55,23 +55,27 @@ function normal(url) {
 
 module.exports = function (config) {
     "use strict"
-    if (config.strict && config.strict === true) {
-        pattern = strict;
-    }
-    if (config.testSecondLevel) {
-        testSecondLevel = config.testSecondLevel;
-    }
-    if (config.mode) {
-        switch(config.mode) {
-            case "simple":
-                return simple;
-                break;
-            case "normal":
-                return normal;
-                break;
-            default:
-                return normal;
-                break;
+    if (config) {
+        if (config.strict && config.strict === true) {
+            pattern = strict;
         }
+        if (config.testSecondLevel) {
+            testSecondLevel = config.testSecondLevel;
+        }
+        if (config.mode) {
+            switch(config.mode) {
+                case "simple":
+                    return simple;
+                    break;
+                case "normal":
+                    return normal;
+                    break;
+                default:
+                    return normal;
+                    break;
+            }
+        }
+    } else {
+        return normal;
     }
 }
